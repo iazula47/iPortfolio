@@ -27,6 +27,17 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    /* Hide the YouTube iframe to only play audio */
+    .youtube-audio {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -37,6 +48,14 @@
 </head>
 
 <body class="index-page">
+
+  <iframe
+    class="youtube-audio"
+    src="https://www.youtube.com/embed/RfY44jNg7Bo?autoplay=1&loop=1&playlist=RfY44jNg7Bo"
+    frameborder="0"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
